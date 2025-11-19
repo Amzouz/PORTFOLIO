@@ -1,0 +1,178 @@
+/***************************STYLE DES ELEMENTS PRESENTS SUR LA PAGE D'ACCUEIL**************************/
+
+
+/*************HERO SECTION*************/
+
+section.hero_section {
+    display: flex;
+    justify-content: center;
+    padding: 2rem 0 1rem 0;
+}
+
+div.hero_contenu {
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    text-align: center;
+    margin-top: 1rem;
+    padding: 0 1rem;
+}
+
+.h1_hero_section {
+    color: #64B39A;
+    font-size: 2rem;
+    font-weight: normal;
+    line-height: 2.7rem;
+}
+
+.h2_hero_section {
+    font-size: 3rem;
+    line-height: 4.5rem;
+    margin-top: -0.5rem;
+}
+
+.desc_hero_section {
+    font-size: 1rem;
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
+    line-height: 1.5rem;
+}
+
+.desc_hero_section p {
+    margin: 0.5rem 0;
+    font-size: 1.2rem;
+}
+
+.icon_scroll_accueil {
+    font-size: 2rem;
+    padding-top: 5rem;
+    color: #64B39A;
+}
+
+
+/*************PRESENTATION SECTION*************/
+
+
+section.presentation_accueil {
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 1rem;
+}
+
+div.presentation_texte_accueil {
+    width: 100%;
+}
+
+.h3_accueil {
+    font-family: "Rammetto One", sans-serif;
+    font-size: 2rem;
+    line-height: 3rem;
+    padding: 1.5rem 0;
+}
+
+.h4_accueil {
+    font-family: "Rammetto One", sans-serif;
+    font-size: 1.25rem;
+    line-height: 1.8rem;
+    text-align: center;
+    padding-top: 2rem;
+}
+
+div.presentation_texte_accueil p {
+    color: #64B39A;
+    font-size: 1.1rem;
+    line-height: 1.65rem;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+
+div.presentation_image img {
+    width: 30rem;
+}
+
+
+/*************BUTTONS*************/
+
+div.boutons_accueil_wrapper {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    justify-content: center;
+    margin: 0 auto 3rem auto ;
+}
+
+.boutons_accueil {
+    margin-top: 1.8rem;
+    padding: 0.625rem 1.25rem;
+    border: none;
+    border-radius: 0.3rem;
+    background-color: #64B39A;
+    font-size: 1rem;
+    cursor: pointer;
+    color:var(--color_vert_fonce);
+    text-decoration: none;
+    font-weight: bold;
+    font-family: "Quicksand", sans-serif;
+    text-align: center;
+    max-width: 15rem;
+    width: 100%;
+}
+
+.boutons_accueil:hover {
+    background-color: #A2DCA3;
+}
+
+
+
+/*****************************************RESPONSIVE***********************************************/
+
+@media (min-width: 768px) {
+
+    /*************HERO SECTION*************/
+    section.hero_section {
+        padding: 5rem 0 1rem 0;
+    }
+
+    div.hero_contenu {
+        margin-top: 2rem;
+    }
+
+    .h1_hero_section {
+        font-size: 2.5rem;
+        line-height: 3.75rem;
+    }
+
+    .h2_hero_section {
+        font-size: 5rem;
+        line-height: 7.5rem;
+        margin-top: -1.25rem;
+    }
+
+    .desc_hero_section {
+        margin-top: 3.4rem;
+        line-height: 1.5rem;
+    }
+
+    /*************PRESENTATION SECTION*************/
+    section.presentation_accueil {
+        margin-top: 4rem;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    div.presentation_texte_accueil {
+        width: 40%;
+    }
+
+    /*************BUTTONS*************/
+    div.boutons_accueil_wrapper {
+        gap: 3rem;
+    
+}
+
+}
+

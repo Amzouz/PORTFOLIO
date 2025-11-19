@@ -1,0 +1,180 @@
+/***************************STYLE DES ELEMENTS PRESENTS SUR TOUTES LES PAGES**************************/
+@import url(./variables.css);
+
+/***************TYPOGRAPHIES******************/
+.rammetto {
+    font-family: "Rammetto One", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 25rem;
+        font-style: normal;
+}
+
+.quicksand {
+    font-family: "Quicksand", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 31.25rem;
+    font-style: normal;
+}
+
+
+/***************GENERAL******************/
+html {
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: var(--color_vert_fonce);
+    color: var(--color_vert_clair);
+    font-family: "Quicksand", sans-serif;
+    font-optical-sizing: auto;
+    padding: 1rem 2rem;
+}
+
+header {
+    padding: 0.625rem;
+}
+
+span {
+    font-weight: bold;
+}
+
+footer {
+    padding-top: 4.4rem;
+    display: flex;
+    justify-content: center;
+}
+
+
+/***************MENU******************/
+.burger-checkbox {
+    display: none;
+}
+
+.burger {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 3rem;
+    height: 3rem;
+    margin-bottom: 2rem;
+    color: var(--color_vert_clair);
+    font-size: 3rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.menu_wrapper {
+    position: absolute;
+    width: 20rem;
+    padding: 1rem;
+    margin-top: -2rem;
+    border: var(--color_vert_clair) 0.1rem solid;
+    background-color: var(--color_vert_fonce);
+    display: none;
+    text-align: center;
+}
+
+.burger-checkbox:checked ~ .menu_wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.logo_menu{
+    width: 10rem;
+    display: block;
+    margin: 0 auto;
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    padding: 1rem;
+}
+
+.menu li {
+    list-style-type: none;
+}
+
+.menu a {
+    text-decoration: none;
+    color: var(--color_vert_clair);
+    font-size: 2rem;
+}
+
+/**********ELEMENTS PRESENTS SUR TOUTES LES PAGES*************/
+
+
+.h1_pages {
+    font-family: "Rammetto One", sans-serif;
+    font-size: 2.5rem;
+    line-height: 3.75rem;
+    text-align: center;
+    padding: 1rem 0 1rem 0;
+}
+
+.h2_pages {
+    font-family: "Rammetto One", sans-serif;
+    font-size: 1.8rem;
+    line-height: 2.7rem;
+    text-align: start;
+    padding: 1rem 0 1rem 0;
+}
+
+.h3_pages {
+    font-size: 1.3rem;
+    line-height: 1.95rem;
+    text-align: start;
+}
+
+p {
+    font-size: 1.2rem;
+    line-height: 1.8rem;
+}
+
+
+/***************FOOTER******************/
+
+footer {
+    display: flex;
+    flex-direction: column;
+    margin-top: 8rem;
+    border-top: var(--color_vert_clair) 0.1rem solid;
+}
+
+footer a {
+    color: #64B39A;
+    text-decoration: none;
+}
+
+.footer_infos {
+    display: flex;
+    flex-direction: row;
+    gap: 5rem;
+    padding: 1rem;
+    justify-content: center;
+}
+
+.footer_colonnes {
+    display: flex;
+    flex-direction: column;
+    gap: 1.4rem;
+    border-left: none;
+    padding-left: 0;
+    text-align: start;
+}
+
+.footer_fin {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.8rem;
+    margin-top: 4rem;
+}
+
+

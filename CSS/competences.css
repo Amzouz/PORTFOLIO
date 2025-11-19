@@ -1,0 +1,43 @@
+/***************************STYLE DES ELEMENTS PRESENTS SUR LA PAGE PARCOURS**************************/
+
+
+.article_parcours_wrapper {
+    display: flex;
+    flex-direction: row;
+    gap: 0.8rem;
+    padding: 1.8rem 0;
+}
+
+.div_parcours_contenu {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+}
+
+.section_parcours_competences {
+    border: solid #A2DCA3 0.1rem;
+    border-radius: 0.5rem;
+    padding: 1.5rem;
+    margin: 1rem 0 2rem 0;
+}
+
+.parcours_competences_liste {
+    list-style-type: disc;
+    padding-left: 2rem;
+    font-size: 1.2rem;
+    line-height: 1.8rem;
+    gap: 0.5rem;
+}é
+
+.parcours_dates {
+    text-decoration: underline;
+}
+
+.parcours_lieu {
+    font-style: italic;
+}
+
+.parcours_icon {
+    font-size: 1.5rem;
+    color: #64B39A; 
+}

@@ -1,0 +1,74 @@
+/***************CSS DE LA PAGE PROJET****************/
+
+
+.articles_projets_bloc   {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 1rem 0 1rem 0;
+    padding: 2rem 3rem;
+    gap: 1rem;
+    border: solid 0.01rem ;
+    border-radius: 10px;
+
+    animation: article-reveal linear;
+    animation-timeline: view();
+}
+
+.h3_projets { 
+    font-size: 1.5rem;
+    text-transform: uppercase;
+}
+
+.projets_date {
+    font-style: italic;
+    font-size: 1.2rem;
+}
+
+.projets_lien {
+    color: #64B39A;
+    text-decoration: none;
+    border: solid #64B39A 1px;
+    border-radius: 10px;
+    padding: 15px;
+    font-size: 1.2rem;
+    margin-top: 20px;
+}
+
+.projets_lien:hover {
+    color: var(--color_vert_fonce);
+    background-color: #64B39A;
+    font-weight: bold;
+}
+
+/************************ANIMATIONS*****************************/
+
+@keyframes article-reveal{
+    entry 0% {
+    opacity: 0;
+    transform: scale(0.8);
+    }
+
+    entry 100% {
+    opacity: 1;
+    transform: scale(1);
+    }
+
+    exit 0% {
+    opacity: 1;
+    transform: scale(1);
+    }
+
+    exit 100% {
+    opacity: 0;
+    transform: scale(0.8);
+    }
+}
+
+/**************************RESPONSIVE**************************/
+
+@media (min-width: 768px) {
+    
+}
