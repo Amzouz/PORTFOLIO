@@ -15,7 +15,7 @@
 }
 
 .section_parcours_competences {
-    border: solid #A2DCA3 0.1rem;
+    border: solid var(--color_vert_clair) 0.1rem;
     border-radius: 0.5rem;
     padding: 1.5rem;
     margin: 1rem 0 2rem 0;

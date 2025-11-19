@@ -123,7 +123,7 @@ div.boutons_accueil_wrapper {
 }
 
 .boutons_accueil:hover {
-    background-color: #A2DCA3;
+    background-color: var(--color_vert_clair);
 }
 
 
