@@ -28,9 +28,9 @@
 }
 
 .projets_lien {
-    color: #64B39A;
+    color: var(--color_turquoise);
     text-decoration: none;
-    border: solid #64B39A 1px;
+    border: solid var(--color_turquoise) 1px;
     border-radius: 10px;
     padding: 15px;
     font-size: 1.2rem;
@@ -39,7 +39,7 @@
 
 .projets_lien:hover {
     color: var(--color_vert_fonce);
-    background-color: #64B39A;
+    background-color: var(--color_turquoise);
     font-weight: bold;
 }
 

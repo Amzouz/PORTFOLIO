@@ -19,7 +19,7 @@ div.hero_contenu {
 }
 
 .h1_hero_section {
-    color: #64B39A;
+    color: var(--color_turquoise);
     font-size: 2rem;
     font-weight: normal;
     line-height: 2.7rem;
@@ -47,7 +47,7 @@ div.hero_contenu {
 .icon_scroll_accueil {
     font-size: 2rem;
     padding-top: 5rem;
-    color: #64B39A;
+    color: var(--color_turquoise);
 }
 
 
@@ -71,6 +71,7 @@ div.presentation_texte_accueil {
     font-size: 2rem;
     line-height: 3rem;
     padding: 1.5rem 0;
+    text-align: center;
 }
 
 .h4_accueil {
@@ -82,7 +83,7 @@ div.presentation_texte_accueil {
 }
 
 div.presentation_texte_accueil p {
-    color: #64B39A;
+    color: var(--color_turquoise);
     font-size: 1.1rem;
     line-height: 1.65rem;
     padding: 1rem 0;
@@ -110,7 +111,7 @@ div.boutons_accueil_wrapper {
     padding: 0.625rem 1.25rem;
     border: none;
     border-radius: 0.3rem;
-    background-color: #64B39A;
+    background-color: var(--color_turquoise);
     font-size: 1rem;
     cursor: pointer;
     color:var(--color_vert_fonce);
@@ -134,7 +135,7 @@ div.boutons_accueil_wrapper {
 
     /*************HERO SECTION*************/
     section.hero_section {
-        padding: 5rem 0 1rem 0;
+        padding: 3rem 0 1rem 0;
     }
 
     div.hero_contenu {
@@ -160,6 +161,7 @@ div.boutons_accueil_wrapper {
     /*************PRESENTATION SECTION*************/
     section.presentation_accueil {
         margin-top: 4rem;
+        padding-top: 1rem;
         flex-direction: row;
         justify-content: space-around;
     }

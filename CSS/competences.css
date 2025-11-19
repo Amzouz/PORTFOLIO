@@ -39,5 +39,5 @@
 
 .parcours_icon {
     font-size: 1.5rem;
-    color: #64B39A; 
+    color: var(--color_turquoise); 
 }

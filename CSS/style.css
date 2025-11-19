@@ -4,9 +4,9 @@
 /***************TYPOGRAPHIES******************/
 .rammetto {
     font-family: "Rammetto One", sans-serif;
-        font-optical-sizing: auto;
-        font-weight: 25rem;
-        font-style: normal;
+    font-optical-sizing: auto;
+    font-weight: 25rem;
+    font-style: normal;
 }
 
 .quicksand {
@@ -16,13 +16,12 @@
     font-style: normal;
 }
 
-
 /***************GENERAL******************/
 html {
     scroll-behavior: smooth;
 }
 
-body{
+body {
     background-color: var(--color_vert_fonce);
     color: var(--color_vert_clair);
     font-family: "Quicksand", sans-serif;
@@ -43,7 +42,6 @@ footer {
     display: flex;
     justify-content: center;
 }
-
 
 /***************MENU******************/
 .burger-checkbox {
@@ -82,7 +80,7 @@ footer {
     gap: 1rem;
 }
 
-.logo_menu{
+.logo_menu {
     width: 10rem;
     display: block;
     margin: 0 auto;
@@ -107,7 +105,6 @@ footer {
 }
 
 /**********ELEMENTS PRESENTS SUR TOUTES LES PAGES*************/
-
 
 .h1_pages {
     font-family: "Rammetto One", sans-serif;
@@ -136,7 +133,6 @@ p {
     line-height: 1.8rem;
 }
 
-
 /***************FOOTER******************/
 
 footer {
@@ -147,7 +143,7 @@ footer {
 }
 
 footer a {
-    color: #64B39A;
+    color: #64b39a;
     text-decoration: none;
 }
 
@@ -177,4 +173,66 @@ footer a {
     margin-top: 4rem;
 }
 
+/***********RESPONSIVE DESKTOP***********/
 
+@media (min-width: 768px) {
+    body {
+        padding: 1rem 3.5rem;
+    }
+
+    header {
+        padding: 0.625rem 6.25rem 1.25rem 6.25rem;
+    }
+
+    .burger {
+        display: none;
+    }
+
+    .menu_wrapper {
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+        margin-top: 0;
+        border: none;
+        background-color: transparent;
+        position: relative;
+    }
+
+    .burger-checkbox:checked ~ .menu_wrapper {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .logo_menu {
+        width: 10.6rem;
+    }
+
+    .menu {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        gap: 6.25rem;
+        padding: 0.625rem;
+    }
+
+    .menu a {
+        font-size: 1rem;
+    }
+
+    .footer_infos {
+        justify-content: space-between;
+        gap: 25rem;
+        padding: 0 16rem 3.5rem 16rem;
+    }
+
+    .footer_colonnes {
+        border-left: solid var(--color_vert_clair) 0.1rem;
+        padding-left: 2rem;
+        text-align: start;
+    }
+}
