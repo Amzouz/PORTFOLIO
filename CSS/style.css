@@ -22,11 +22,18 @@ html {
 }
 
 body {
-    background-color: var(--color_vert_fonce);
+    background: radial-gradient(circle 50rem at right, #316152, var(--color_background));
     color: var(--color_vert_clair);
     font-family: "Quicksand", sans-serif;
     font-optical-sizing: auto;
-    padding: 1rem 2rem;
+    padding: 1rem 0;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 1rem;
 }
 
 header {
@@ -68,7 +75,7 @@ footer {
     padding: 1rem;
     margin-top: -2rem;
     border: var(--color_vert_clair) 0.1rem solid;
-    background-color: var(--color_vert_fonce);
+    background-color: var(--color_background);
     display: none;
     text-align: center;
 }
@@ -118,7 +125,7 @@ footer {
     font-family: "Rammetto One", sans-serif;
     font-size: 1.8rem;
     line-height: 2.7rem;
-    text-align: start;
+    text-align: center;
     padding: 1rem 0 1rem 0;
 }
 
@@ -140,6 +147,9 @@ footer {
     flex-direction: column;
     margin-top: 8rem;
     border-top: var(--color_vert_clair) 0.1rem solid;
+    border-radius: 1rem;
+    background-color: var(--color_background);
+    margin:none;
 }
 
 footer a {
@@ -169,16 +179,16 @@ footer a {
     flex-direction: column;
     align-items: center;
     gap: 0.5rem;
-    font-size: 0.8rem;
     margin-top: 4rem;
+}
+
+.footer_fin > p {
+        font-size: 1rem;
 }
 
 /***********RESPONSIVE DESKTOP***********/
 
 @media (min-width: 768px) {
-    body {
-        padding: 1rem 3.5rem;
-    }
 
     header {
         padding: 0.625rem 6.25rem 1.25rem 6.25rem;
@@ -228,11 +238,20 @@ footer a {
         justify-content: space-between;
         gap: 25rem;
         padding: 0 16rem 3.5rem 16rem;
+        font-size: 1rem;
     }
 
     .footer_colonnes {
         border-left: solid var(--color_vert_clair) 0.1rem;
         padding-left: 2rem;
         text-align: start;
+    }
+
+    .footer_fin {
+        gap: 0.1rem;
+    }
+
+    .footer_fin > p {
+        font-size: 0.9rem;
     }
 }

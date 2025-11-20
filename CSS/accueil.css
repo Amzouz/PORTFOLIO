@@ -114,7 +114,7 @@ div.boutons_accueil_wrapper {
     background-color: var(--color_turquoise);
     font-size: 1rem;
     cursor: pointer;
-    color:var(--color_vert_fonce);
+    color:var(--color_background);
     text-decoration: none;
     font-weight: bold;
     font-family: "Quicksand", sans-serif;

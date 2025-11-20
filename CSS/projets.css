@@ -1,5 +1,11 @@
 /***************CSS DE LA PAGE PROJET****************/
 
+.projet_desc {
+    justify-self: center;
+    padding: 2rem 0 4rem 0; 
+    text-align: center; 
+    margin: 0 auto; 
+}
 
 .articles_projets_bloc   {
     display: flex;
@@ -38,7 +44,7 @@
 }
 
 .projets_lien:hover {
-    color: var(--color_vert_fonce);
+    color: var(--color_background);
     background-color: var(--color_turquoise);
     font-weight: bold;
 }
@@ -70,5 +76,29 @@
 /**************************RESPONSIVE**************************/
 
 @media (min-width: 768px) {
+
+
+    .projet_desc {
+        width: 60rem;
+    }
+
+    .projet_container {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 2rem;
+    }
     
+    .articles_projets_bloc   {
+        width: 35rem;
+    }
+
+    .projets_date {
+        font-size: 1rem;
+    }
+
+    .projets_lien:hover {
+        font-weight: normal;
+    }
 }

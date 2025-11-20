@@ -15,10 +15,13 @@
 }
 
 .section_parcours_competences {
+    display: flex;
+    flex-direction: column;
     border: solid var(--color_vert_clair) 0.1rem;
     border-radius: 0.5rem;
     padding: 1.5rem;
     margin: 1rem 0 2rem 0;
+    gap: 1.5rem;
 }
 
 .parcours_competences_liste {
@@ -40,4 +43,37 @@
 .parcours_icon {
     font-size: 1.5rem;
     color: var(--color_turquoise); 
+}
+
+.experience_section_pro {
+    margin-top: 3rem;
+}
+
+
+/**************RESPONSIVE**************/
+
+@media (min-width: 768px) { 
+
+    .formation_competences_wrapper {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 4rem;
+        margin-top: 3rem;
+    }
+
+    .formation_container {
+        width: 40rem;
+    }
+
+    .section_parcours_competences {
+        width: 39rem;
+        height: 36rem;
+    }
+
+    .experience_section_pro {
+        width: 50rem;
+        justify-self: end;
+    }
+
 }
